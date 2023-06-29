@@ -1,0 +1,35 @@
+{
+  "name": "stackbit-strapi-content-source",
+  "version": "0.1.0",
+  "description": "Stackbit Strapi CMS Interface",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist",
+    "/src"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc --build --clean && tsc --build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": "github:marob/stackbit-strapi-content-source",
+  "keywords": [
+    "stackbit",
+    "strapi"
+  ],
+  "author": "Maxime Robert",
+  "license": "MIT",
+  "homepage": "https://github.com/marob/stackbit-strapi-content-source",
+  "dependencies": {
+    "contentful": "^9.1.32"
+  },
+  "devDependencies": {
+    "@stackbit/types": "^0.8.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "eslint": "8.43.0",
+    "typescript": "5.1.6"
+  }
+}
